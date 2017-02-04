@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.wavelabs.model.Television" table="tv">
+		<id name="id" column="ID">
+		</id>
+		<property name="name" column="NAME" type="string"></property>
+		<property name="cost" column="COST" type="double" update="false"></property>
+		<property name="warranty" column="WARRANTY" insert="false"
+			type="int"></property>
+	</class>
+</hibernate-mapping>
